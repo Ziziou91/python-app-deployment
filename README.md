@@ -32,3 +32,5 @@ o	Benefits you saw personally from the project
 •	Project Management: Maintain a project board (e.g., Trello, Jira or GitHub Project) to manage tasks
 
 python -m flask --version
+
+https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal?pivots=programming-language-csharp
