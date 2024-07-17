@@ -30,3 +30,5 @@ o	Blockers – Suggestion: what was the issue, reason for the issue, solution
 o	What you learnt
 o	Benefits you saw personally from the project
 •	Project Management: Maintain a project board (e.g., Trello, Jira or GitHub Project) to manage tasks
+
+python -m flask --version
