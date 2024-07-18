@@ -70,6 +70,7 @@ tech258-joshg-webhook-listener-app
 7) Add python file to the virtual machine. 
 8) Launch the web server with `python main.py`
 
+Once this is tested and working it can be turned into a shell script to be run as user data.
 
 ### Add webhook to the Github repo and test.
 1) Go to the github repo > settings > webhook
@@ -110,7 +111,7 @@ o	Benefits you saw personally from the project
 •	Project Management: Maintain a project board (e.g., Trello, Jira or GitHub Project) to manage tasks
 
 python -m flask --version
-
+cat /var/log/cloud-init-output.log
 
 
 
