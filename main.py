@@ -1,4 +1,8 @@
+import requests
+import json
 from flask import Flask, request, jsonify
+
+webhook_url = "https://webhook.site/4f96fb8c-9973-4dbe-9397-cff9af9fc437"
 
 app = Flask(__name__)
 
@@ -7,11 +11,13 @@ def webhook():
 
 
     if request.method == "POST":
-        data = request.json
+        req_data = request.json
         # Process the data as needed
 
         # Check that the request is coming from the repo
-        if data["repository"]["url"] == "https://api.github.com/repos/Ziziou91/python-app-deployment":
+        if req_data["repository"]["url"] == "https://api.github.com/repos/Ziziou91/python-app-deployment":
+            data = { 'name': 'This is a test of my webhook' }
+            requests.post(webhook_url, data=json.dumps(data), headers={'Content-Type': 'application/json'})
             return jsonify({"status": "success", "data": "received github webhook"}), 200
 
 
